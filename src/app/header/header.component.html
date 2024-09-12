@@ -1,0 +1,22 @@
+<header>
+    <div class="parent">
+        <div class="child">
+            <img class="imgHeader" src="ereskaapps-logo.png" alt="EreskaApps Logo">
+
+        </div>
+        <div class="child">
+            <h2>Martin Gábor</h2>
+        </div>
+    </div>
+    <div class="buttons">
+        @for (app of applicationService.testApps; track app.id) {
+            <app-dropdown-button [title]="{name: app.attributes.name, id: app.id}" option1="Privacy" option2="Conditions" />
+        }
+        
+        <!-- <app-dropdown-button [title]="{name:'iBločky',id:'iblocky'}" option1="Privacy" option2="Conditions" />
+        <app-dropdown-button [title]="{name:'Simple Calculator',id:'simple-calculator'}" option1="Privacy"
+            option2="Conditions" />
+        <app-dropdown-button [title]="{name:'DPH Kalulačka',id:'vat-calculator'}" option1="Privacy"
+            option2="Conditions" /> -->
+    </div>
+</header>

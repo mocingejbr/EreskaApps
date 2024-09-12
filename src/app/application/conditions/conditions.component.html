@@ -1,0 +1,116 @@
+<div>
+    <h1>TERMS OF USE</h1>
+    <p>Please read carefully before using our apps.</p>
+    <p>By using our products, you agree to be bound by these Terms. If you don't agree to these Terms, do not use our
+        apps. If you are using our products on behalf of an organization (such as your employer), you are agreeing to
+        these Terms for that organization, and are indicating that you have the authority to bind that organization to
+        these Terms. In that case, “you” and “your” will refer to that organization.</p>
+    <p>Thanks for using our product provided by Martin Gábor. </p>
+    <p>By using the app, you have understood and accepted the terms and conditions (Terms of Service). </p>
+    <h3>BASIC TERMS</h3>
+    <ol>
+        <li>You are responsible for any activity that occurs under your user account. </li>
+        <li>You are responsible for safeguarding the password that you use to access this app and for any activities.
+        </li>
+        <li>You must not abuse, harass, threaten, Impersonate or intimidate other users.</li>
+        <li>You may not use this app for any illegal or unauthorized purpose. International users agree to comply with
+            all local laws regarding online conduct and acceptable content.</li>
+        <li>You are solely responsible for your conduct and any data, text, information, screen names, photos, profiles,
+            links that you submit, post and display on our app.</li>
+        <li>You must not copy, create a derivative work of, nor modify another app to falsely imply that it is
+            associated with this app.</li>
+        <li>You must not upload, post, email, transmit, forward, provide links to, or otherwise make available any
+            unsolicited or unauthorized advertising, promotional materials, “junk mail,” “spam,” ”chain letters,”
+            ”pyramid schemes,” or any other form of solicitation to any users.</li>
+        <li>You must not interfere with or disrupt app or servers or networks connected to Martin Gábor such as the
+            transmission of worms, viruses, or any code of a destructive nature applicable local, state, national, or
+            international law.</li>
+        <li>You must not, in using the app, intentionally or unintentionally violate any applicable local, state,
+            national, or international law.</li>
+    </ol>
+    <p>Violation of any of these agreements will result in the termination of your app account. While we prohibit such
+        conduct and content within the app, you understand and agree that https://sites.google.com/view/ereskaapps
+        cannot be responsible for the content posted on its app.
+    </p>
+    <h3>GENERAL CONDITIONS</h3>
+    <ol>
+        <li>We reserve the right to modify or terminate our service for any reason, without notice at any time.</li>
+        <li>https://sites.google.com/view/ereskaapps reserves the right to change or modify these Terms of User at any
+            time, in its sole discretion, by posting changes at app. Your continued use of this app will constitute your
+            acceptance of such changes or modifications, what constitutes a “material change” will be determined at our
+            sole discretion, in good faith and using common sense and reasonable judgment.</li>
+        <li>We reserve the right to refuse service to anyone for any reasonable judgment.</li>
+        <li>We may, but have no obligations to remove content and accounts containing Content that we determine in our
+            sole discretion are unlawful, offensive, threatening, and libelous. Defamatory, obscene or otherwise
+            objectionable or violates any party's intellectual property or these Terms of Use.</li>
+        <li>As a condition of your use of this app, you agree that Martin Gábor has the right, for any purpose, to
+            retain, use and publish in aggregate manner information collected from your use of the app.</li>
+        <li>We reserve the right to reclaim the usernames on behalf of businesses or individuals that hold legal claims
+            or trademark on those usernames.</li>
+    </ol>
+    <p>You agree not to use this app to:</p>
+    <ol>
+        <li>Upload, post, email, transmit, forward, provide links to, or otherwise make available any Content that is
+            unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, vulgar, obscene, libelous,
+            invasive of another's privacy, hateful, or racially, ethnically or otherwise objectionable;</li>
+        <li>Upload, post, email, transmit, forward, provide links to, store or otherwise make available any material
+            that infringes copyrighted material or promotes the violation of intellectual property rights of others,
+            including but not limited to trademark and patent violations;</li>
+        <li>Upload, post, email, transmit, forward, provide links to, store or otherwise make available any unsolicited
+            or unauthorized advertising, promotional materials, “junk mail”, “spam”, ”chain letters,” ”pyramid schemes,”
+            or any other form of solicitation;</li>
+        <li>Impersonate any person or entity, including, but not limited to, Martin Gábor, or falsely state or otherwise
+            misrepresent your affiliation with a person or entity;</li>
+        <li>Disobey any requirement, procedures or policies or regulations connected to this app.</li>
+    </ol>
+    @if (application().inAppPurchases) {
+    <h3>PAYMENT</h3>
+    <p>For in-app purchases made through the App Store, we do not have the right to issue any refunds. The only way to
+        receive a refund for such purchases is to contact Apple. </p>
+    <p>You can subscribe for premium account with no ads and unlitmited currency conversions.</p>
+    <p>Subscription Terms:</p>
+    <table>
+        <tr>
+            <th>Length of Subscription</th>
+            <th>Price</th>
+        </tr>
+        @for (subscription of application().subscriptionOptions; track $index) {
+            <tr>
+                <td>{{ subscription.length }}</td>
+                <td>{{subscription.price | currency: 'EUR'}}</td>
+            </tr>
+        }
+    </table>
+    <p>All prices are subject to change without notification. We occasionally run promotion prices as incentives or
+        limited time opportunities for qualifying purchases made during the promotional time period. Due to the time
+        sensitive and promotional nature of these events we are unable to offer price protection or retroactive
+        discounts or refunds for previous purchases in the event of a price reduction or promotional offering.</p>
+    <p>Payment will be charged to iTunes account at confirmation of purchase.</p>
+    <p>Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current
+        period. </p>
+    <p>Account will be charged for renewal within 24-hours prior to the end of the current period, and identify the cost
+        of the renewal. </p>
+    <p>Subscriptions may be managed by the user and auto renewal may be turned off by going to the user's iTunes Account
+        Settings after purchase. </p>
+    <p>No cancellation of the current subscription is allowed during active subscription period. </p>
+    <p>You may turn off the auto-renewal of your subscription via your iTunes Account Settings.</p>
+    <p>However, you are not able to cancel the current subscription during its active period.</p>
+    }
+    <h3>COPYRIGHT</h3>
+    <p>All the resources including the images, videos, audios, and texts are protected by the trademark and copyright.
+        Any
+        use of the above sources without permission is illegal. All right, title, and interest in and to This app
+        (excluding
+        Content provided by users) are and will remain the exclusive property of this append its licensor. The services
+        are
+        protected by copyright, trademark, and other laws of both China and foreign countries. Nothing in the Terms
+        gives
+        you a right to use the App name or any of the App trademarks, logos, domain names, images, videos, audios and
+        texts,
+        and other distinctive brand features. Any feedback, comments, or suggestions you may provide regarding this app
+        is
+        entirely voluntary and we will be free to use such feedback, comments or suggestions as we see fit and without
+        any
+        obligation to you.</p>
+    <p> Contact us: <a href="mailto: ereskaapps@gmail.com"> ereskaapps&#64;gmail.com </a>. </p>
+</div>

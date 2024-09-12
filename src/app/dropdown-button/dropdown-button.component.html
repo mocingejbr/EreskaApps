@@ -1,0 +1,7 @@
+<div class="dropdown">
+    <button [routerLink]="[title().id]" routerLinkActive="selected" class="dropbtn">{{ title().name }}</button>
+    <div class="dropdown-content">
+        <a [routerLink]="[title().id, option1().toLowerCase()]" routerLinkActive="selected">{{option1()}}</a>
+        <a [routerLink]="[title().id, option2().toLowerCase()]" routerLinkActive="selected">{{option2()}}</a>
+    </div>
+</div>
